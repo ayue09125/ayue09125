@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="header">
-            <h1>Trivia!</h1>
+            <h1>Lora Data Rate Calculator</h1>
         </div>
 
         <div class="container">
@@ -24,30 +24,28 @@
                 <button id="mollusk">mollusk</button>
                 <p id="response"></p> -->
                 
-                
-
-                <div id="outer">
-                    <form id="inner">
-                        <input autocomplete="off" type="text" id="answer">
-                        <div class="inner"><button type="submit" class="Hz" >Hz </button></div>
-                        <div class="inner"><button type="submit" class="kHz">kHz</button></div>
-                        <div class="inner"><button type="submit" class="MHz">MHz</button></div>
-                        <div class="inner"><button type="submit" class="Ghz">GHz</button></div>
-                    </form>
-                    
-                </div>
+                <p>Bandwidth / BW</p>
+                <select name="bandwidth" id="bandwidth" multiple>
+                    <option value="Hz ">Hz </option>
+                    <option value="kHz">kHz</option>
+                    <option value="MHz">MHz</option>
+                    <option value="GHz">GHz</option>
+                  </select>
             </div>
 
             <div class="section">
-                <h2>Part 2: Free Response</h2>
+                <!-- <h2>Part 2: Free Response</h2>
                 <hr>
-                <!-- TODO: Add free response question here -->
                 <h3>How many days are in a week?</h3>
                 <form>
                     <input autocomplete="off" type="text" id="answer">
                     <button type="submit">submit</button>
                     <br>
                     <p id="response2"></p>
+                </form> -->
+
+                <form id="inner">
+                    <input autocomplete="off" type="text" id="answer">
                 </form>
             </div>
         </div>
