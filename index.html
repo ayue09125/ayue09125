@@ -24,12 +24,16 @@
                 <button id="mollusk">mollusk</button>
                 <p id="response"></p> -->
                 
-                <p>Bandwidth / BW</p>
-                <select name="bandwidth" id="bandwidth" multiple>
-                    <option value="Hz ">Hz </option>
-                    <option value="kHz">kHz</option>
-                    <option value="MHz">MHz</option>
-                    <option value="GHz">GHz</option>
+                <p>Bandwidth / BW (choose units)</p>
+                <select class="outer" id="bandwidth" multiple>
+                    <form id="inner">
+                        <input autocomplete="off" type="text" id="bw">
+                        <option value="Hz ">Hz </option>
+                        <option value="kHz">kHz</option>
+                        <option value="MHz">MHz</option>
+                        <option value="GHz">GHz</option>
+                    </form>
+                    
                   </select>
             </div>
 
@@ -43,9 +47,23 @@
                     <br>
                     <p id="response2"></p>
                 </form> -->
-
+                <p>Spread Factor / SF (integer)</p>
                 <form id="inner">
-                    <input autocomplete="off" type="text" id="answer">
+                    <input autocomplete="off" type="text" id="sf">
+                </form>
+            </div>
+
+            <div class="section">
+                <p>Code Rate / CR (integer)</p>
+                <form id="inner">
+                    <input autocomplete="off" type="text" id="cr">
+                </form>
+            </div>
+
+            <div class="section">
+                <p>Data Rate / Bit Rate (bps)</p>
+                <form id="inner">
+                    <input autocomplete="off" type="text" id="bitRate">
                 </form>
             </div>
         </div>
