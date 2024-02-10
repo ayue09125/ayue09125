@@ -9,65 +9,29 @@
     </head>
     <body>
         <div class="header">
-            <h1>Lora Data Rate Calculator</h1>
+            <h1>Link Budget Calculator</h1>
         </div>
+        <form class="section">
+            <label for="bw">Bandwidth / BW (choose units)</label><br>
+            <input type="number" id="bw"><br>
+            <select class="inner" id="hertz" multiple>
+                <option value="Hz ">Hz </option>
+                <option value="kHz">kHz</option>
+                <option value="MHz">MHz</option>
+                <option value="GHz">GHz</option>
+            </select><br>
 
-        <div class="container">
-            <div>
-                <button type="submit">calculate</button>
-            </div>
-            <div class="section">
-                <!-- <h2>Part 1: Multiple Choice </h2>
-                <hr>
-                
-                <h3>What kind of animal is a crab?</h3> 
-                <button id="crustacean">crustacean</button>
-                <button id="arachnid">arachnid</button>
-                <button id="mammal">mammal</button>
-                <button id="mollusk">mollusk</button>
-                <p id="response"></p> -->
-                
-                <p>Bandwidth / BW (choose units)</p>
-                <form id="outer">
-                    <input autocomplete="off" type="text" class="inner" id="bw">
-                    <select class="inner" id="bandwidth" multiple>
-                        <option value="Hz ">Hz </option>
-                        <option value="kHz">kHz</option>
-                        <option value="MHz">MHz</option>
-                        <option value="GHz">GHz</option>
-                    </select>
-                </form>
-            </div>
+            <label for="sf">placeholder</label><br>
+            <input type="number" id="sf"><br>
 
-            <div class="section">
-                <!-- <h2>Part 2: Free Response</h2>
-                <hr>
-                <h3>How many days are in a week?</h3>
-                <form>
-                    <input autocomplete="off" type="text" id="answer">
-                    <button type="submit">submit</button>
-                    <br>
-                    <p id="response2"></p>
-                </form> -->
-                <p>Spread Factor / SF (integer)</p>
-                <form id="outer">
-                    <input autocomplete="off" type="text" id="sf">
-                </form>
-            </div>
+            <label for="cr">placeholder</label><br>
+            <input type="number" id="cr"><br>
 
-            <div class="section">
-                <p>Code Rate / CR (integer)</p>
-                <form id="outer">
-                    <input autocomplete="off" type="text" id="cr">
-                </form>
-            </div>
+            <br>
 
-            <div class="section">
-                <p>Data Rate / Bit Rate (bps)</p>
-                <form id="outer">
-                    <input autocomplete="off" type="text" id="br">
-                </form>
-            </div>
-        </div>
+            <button type="submit">submit</button>
+            <p id="answer"></p>
+          </form>
+
     </body>
 </html>
